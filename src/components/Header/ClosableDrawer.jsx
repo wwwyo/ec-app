@@ -47,7 +47,7 @@ const ClosableDrawer = (props) => {
   },[setKeyword]);
 
   const selectMenu = (event, path) => {
-    dispatchEvent(push(path));
+    dispatch(push(path));
     props.onClose(event)
   }
 
@@ -67,7 +67,10 @@ const ClosableDrawer = (props) => {
         classes={{paper: classes.drawerPaper}}
         ModalProps={{keepMounted: true}}
       >
-        <div>
+        <div
+          onClose={(e) => props.onClose(e)}
+          onKeyDown={(e) => props.onClose(e)}
+        >
           <div className={classes.searchField}>
             <TextInput
               fullWidth={false} label={"キーワード入力"} multiline={false}
