@@ -115,7 +115,7 @@ const SetSizeArea = (props) => {
             fullWidth={false} label={"数量"} multiline={false} required={true}
             onChange={inputQuantity} rows={1} type={"number"} value={quantity}
           />
-          <IconButton className={classes.checkIcon} onClick={() => addSize(index, size, quantity, )}>
+          <IconButton className={classes.checkIcon} onClick={() => addSize(index, size, quantity)}>
             <CheckCircleIcon />
           </IconButton>
         </div>

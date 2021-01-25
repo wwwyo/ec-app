@@ -12,7 +12,7 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
 import HistoryIcon from '@material-ui/icons/History';
 import PersonIcon from '@material-ui/icons/Person';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import TextField, { TextInput } from '../UIkit/index';
+import { TextInput } from '../UIkit/index';
 import {push} from 'connected-react-router';
 import {useDispatch} from 'react-redux';
 import {signOut} from '../../reducks/users/operations';
