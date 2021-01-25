@@ -4,7 +4,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
-
 import TableRow from "@material-ui/core/TableRow";
 import IconButton from "@material-ui/core/IconButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
@@ -38,7 +37,7 @@ const SizeTable = (props) => {
                 </TableCell>
                 <TableCell>
                   {size.quantity > 0 ? (
-                    <IconButton>
+                    <IconButton onClick={() => props.addProduct(size.size)}>
                       <ShoppingCartIcon />
                     </IconButton>
                   ) : (
