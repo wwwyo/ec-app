@@ -18,6 +18,12 @@ export const fetchProductsInCart = (products) => {
   }
 }
 
+
+export const fetchProductsInCart = (products) => {
+  return async (dispatch) => {
+    dispatch(fetchProductsInCartAction(products))
+  }
+}
 export const listenAuthState = () => {
   return async (dispatch) => {
     return auth.onAuthStateChanged((user) => {
